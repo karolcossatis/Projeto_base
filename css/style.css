@@ -93,6 +93,7 @@ h3 {
     text-transform: uppercase;
     font-family: var(--font-geral);
     font-weight: bold;
+    
 
     /*estilo bootstrap*/
         --bs-btn-border-color: none;
@@ -174,7 +175,9 @@ p {
 }
 
 @media (max-width:600px){
-    
+    .opcoes{
+        gap: 15px;
+    }
   
     #container_secundario {
         gap:15px;
