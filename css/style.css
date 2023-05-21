@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --fonte-titulos :  font-family: 'Bebas Neue', sans-serif;
+    --font-geral: font-family: 'Lato', sans-serif;
+    --text-primary: #50180a;
+    --dark-color: #9D5A4D;
+    --medium-color:#EFA593;
+    --soft-color: #E6DAD1;
+}
+
+body {
+   /* background: rgb(251,164,202);
+    background: radial-gradient(circle, rgb(253, 157, 245) 0%, rgb(63, 51, 114) 100%); */
+    /*background: rgb(251,164,179);
+    background: radial-gradient(circle, rgba(251,164,179,1) 0%, rgba(247,190,124,1) 100%);*/
+    background-image: linear-gradient(to right, #efa593, #df9685, #d08878, #c07a6b, #b16c5e, #b16c5e, #b16c5e, #b16c5e, #c07a6b, #d08878, #df9685, #efa593);
+
+}
+
+#container_principal {
+
+    margin-top: 30px;
+  
+/* From https://css.glass */
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+   
+
+    
+}
+
+
+#container_secundario {
+    padding: 15px;
+}
+
+h1 {
+    font-family: var(--fonte-titulos);
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    
+}
+
+h3 {
+    color: var(--text-primary);
+    font-family: var(--font-geral);
+}
+
+#banner {
+    width: 350px;
+    border-radius: 85px 25px 85px 25px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 1px -5px 12px 7px rgba(0,0,0,0.15); 
+    box-shadow: 0px 10px 13px -7px #000000, 1px -5px 12px 7px rgba(0,0,0,0.15);
+}
+
+#box_opcao {
+    padding-top: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 2;
+    align-items: stretch;
+     
+   
+}
+
+.btn-danger {
+    background-color: var(--dark-color);
+    width: 300px;
+    outline: none;
+    transition: 0.4s;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family: var(--font-geral);
+    font-weight: bold;
+
+    /*estilo bootstrap*/
+        --bs-btn-border-color: none;
+        --bs-btn-color: var(--soft-color);
+        --bs-btn-bg:var(--dark-color);
+        --bs-btn-border-color: none;
+        --bs-btn-hover-color: var(--soft-color);
+        --bs-btn-hover-bg: var(--medium-color);
+        --bs-btn-hover-border-color:none;
+        --bs-btn-focus-shadow-rgb: 225,83,97;
+        --bs-btn-active-color: var(--soft-color);
+        --bs-btn-active-bg:var(--dark-color);
+        --bs-btn-active-border-color: none;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: var(--soft-color);
+        --bs-btn-disabled-bg: var(--dark-color);
+        --bs-btn-disabled-border-color: none;
+
+}
+
+.modal{
+    background: rgba(255, 255, 255, 0.055);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.modal-header,
+.modal-footer {
+    background-color: var(--soft-color);
+}
+
+.btn-primary {
+    background-color: var(--dark-color);
+    outline: none;
+    transition: 0.4s;
+    text-transform: uppercase;
+
+        --bs-btn-border-color: none;
+        --bs-btn-color: var(--soft-color);
+        --bs-btn-bg:var(--dark-color);
+        --bs-btn-border-color: none;
+        --bs-btn-hover-color: var(--soft-color);
+        --bs-btn-hover-bg: var(--medium-color);
+        --bs-btn-hover-border-color:none;
+        --bs-btn-focus-shadow-rgb: 225,83,97;
+        --bs-btn-active-color: var(--soft-color);
+        --bs-btn-active-bg:var(--dark-color);
+        --bs-btn-active-border-color: none;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: var(--soft-color);
+        --bs-btn-disabled-bg: var(--dark-color);
+        --bs-btn-disabled-border-color: none;
+}
+
+h4 {
+    font-family: var(--fonte-titulos);
+    color: var(--text-primary);
+}
+
+p {
+    font-family: var(--font-geral);
+}
+
+@media (min-width: 1450px) {
+    #banner {
+     width: 450px;
+    }
+
+}
+
+@media (max-width:600px){
+    
+  
+    #container_secundario {
+        gap:15px;
+       
+    
+    }
+}
+
