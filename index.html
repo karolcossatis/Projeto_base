@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -21,34 +21,44 @@
         <div class="col-md-12">
             <h1>Descubra a sua base ideal </h1>
         </div>
-
+        <!--area das opções-->
         <div id="container_secundario" class="container row">
             <div id="box_opcao" class="col-md-6">
-                <h3>Selecione o seu tipo de pele </h3>
-                <div class="opcoes">
-                    <div class="col-md-4">
-                        <button type="button" class="btn btn-danger  btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#modal_peleSeca">
-                            Pele Seca
-                        </button>
+                <div>
+                    <h3>Tipo de pele </h3>
+                    <div class="form-check form-check-inline area_opcao">
+                        <input class="form-check-input" type="radio" name="peleSelect" id="peleSelectSeca" value="seca">
+                        <label class="form-check-label label_opcao" for="peleSelectSeca">Seca</label>
+                      </div>
+                      <div class="form-check form-check-inline area_opcao">
+                        <input class="form-check-input" type="radio" name="peleSelect" id="peleSelectMista" value="mista">
+                        <label class="form-check-label label_opcao" for="peleSelectMista">Mista</label>
+                      </div>
+                      <div class="form-check form-check-inline area_opcao">
+                        <input class="form-check-input" type="radio" name="peleSelect" id="peleSelectOleosa" value="oleosa">
+                        <label class="form-check-label label_opcao" for="peleSelectOleosa">Oleosa</label>
+                      </div>
                     </div>
-                    <div class="col-md-4">
-                        <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#modal_peleMista">
-                            Pele Mista
-                        </button>
-                    </div>
-                    <div class="col-md-4">
-                        <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#modal_peleOleosa">
-                            Pele Oleosa
-                        </button>
-                    </div>
+
+                <div>
+                    <h3>Beneficio</h3>
+                    <div class="form-check form-check-inline area_opcao">
+                        <input class="form-check-input" type="radio" name="beneSelect" id="beneSelectcob" value="cobertura">
+                        <label class="form-check-label label_opcao" for="beneSelectcob">Cobertura</label>
+                      </div>
+                      <div class="form-check form-check-inline area_opcao">
+                        <input class="form-check-input" type="radio" name="beneSelect" id="beneSelecttrat" value="tratamento">
+                        <label class="form-check-label label_opcao" for="beneSelecttrat">Tratamento</label>
+                      </div>
                 </div>
+
+                <button id="descobrirBtn" class="btn btn-primary" type="submit">Descobrir minha base</button>
+
             </div>
 
+            <!--area da imagem-->
             <div id="box_img" class="col-md-6">
-                <img id="banner" src="img/bannerbaseok.png"  alt="banneraplicandobase" >
+                <img id="banner" src="img/bannerbaseok.png" alt="banneraplicandobase">
             </div>
 
         </div>
@@ -56,78 +66,164 @@
     </div>
 
     <!--Modal-->
-    <div class="modal fade" id="modal_peleSeca" tabindex="-1" aria-labelledby="modalpeleseca" aria-hidden="true">
+    <div class="modal fade" id="modal_peleOC" tabindex="-1" aria-labelledby="modal_peleOc" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Pele seca</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Oleosa e cobertura</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div>
-                    <h4>Base Hyaluronic</h4>
-                    <p>A Make B. Base Líquida Protetora Hyaluronic 70, 30 ml proporciona uma pele mais lisa e uniforme imediatamente, além de reduzir rugas e linhas de expressão a partir de 7 dias de uso.
-                        
+                    <h4>Base Líquida Soul Ultra Matte Cor</h4>
+                    <p> Se você possui pele oleosa e procura uma base que cubra imperfeições, a Base Líquida Soul Ultra Matte é a ideal para você!
+                       <br> Ela proporciona uma make a prova de photos e pele sequinha o dia todo!
+                       
                     </p>
                     </div>
                     <div>
-                    <img src="img/baseliquidaseca.png" alt="" width="300px">
+                    <img src="img/peleoleosacobertura.jpg" alt="base soul ultra matte" width="300px">
                     </div>
                 </div>
                 <div class="modal-footer">
 
-                    <a href="https://www.boticario.com.br/base-liquida-protetora-hyaluronic-fps-70-cor-70-make-b-30-ml/"
+                    <a href="https://www.eudora.com.br/base-liquida-soul-ultra-matte-cor-13-25ml/"
                         type="button" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="modal_peleMista" tabindex="-1" aria-labelledby="modalpelemista" aria-hidden="true">
+    <div class="modal fade" id="modal_peleOT" tabindex="-1" aria-labelledby="modalpeleOt" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Pele Mista</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div>
-                    <h4>Base Make B. Retinol H+</h4>
-                    <p>A Base Líquida Cor 15 com FPS 80 Make B. Retinol H+ 26g combina Duplo Retinol com Ácido Hialurônico Vetorizado e fator de proteção contra os raios UV. A conexão maravilhosa entre maquiagem e tratamento que a sua pele precisa.</p>
-                    </div>
-                    <div>
-                    <img src="img/basemista.png" alt="" width="300px">
-                    </div>
-                </div>
-                <div class="modal-footer">
-
-                    <a href="https://www.boticario.com.br/base-liquida-cor-25-com-fps-80-make-b-retinol-h-26g/"
-                        type="button" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal_peleOleosa" tabindex="-1" aria-labelledby="modalpeleoleosa" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Pele Oleosa</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Oleosa e tratamento</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div>
                     <h4>Base Mate Salicylic</h4>
-                    <p>A Base Líquida Make B. Mate Salicylic é inovação para sua maquiagem, entregando um efeito mate atemporal segundos após a aplicação, além de tratar e controlar a oleosidade por até 18 horas.
-                       </p>
+                    <p>A Base Líquida Make B. Mate Salicylic é inovação para sua maquiagem, entregando um efeito mate atemporal segundos após 
+                        a aplicação, além de tratar e controlar a oleosidade por até 18 horas.
+                    </p>
                     </div>
                     <div>
-                    <img src="img/baseoleosa.jpg" alt="" width="300px">
+                    <img src="img/baseoleosa.jpg" alt="base mate salicylic" width="300px">
                     </div>
                 </div>
                 <div class="modal-footer">
 
-                    <a href="https://www.boticario.com.br/base-liquida-cor-220-make-b-mate-salicylic-30g/" type="button"
+                    <a href="https://www.boticario.com.br/base-liquida-cor-220-make-b-mate-salicylic-30g/" 
+                        type="button" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_peleMC" tabindex="-1" aria-labelledby="modalpeleMC" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel3">Mista e cobertura</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                    <h4>Boca Rosa Beauty by Payot</h4>
+                    <p>Base líquida com acabamento matte na medida.
+                        <br>Boca Rosa Beauty by Payot é hipoalergênica, oferece alta cobertura e permite construir camadas, o que é perfeito peles mistas!                        
+                    </p>
+                    </div>
+                    <div>
+                    <img src="img/pelemistacobertura.jpg" alt="base boca rosa" width="300px">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.belezanaweb.com.br/boca-rosa-beauty-by-payot-8-fernanda-base-liquida-30ml/" type="button"
+                        class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_peleMT" tabindex="-1" aria-labelledby="modalpeleMt" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel4">Mista e tratamento</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                    <h4>Base Make B. Retinol H+</h4>
+                    <p>A Base Líquida Cor 15 com FPS 80 Make B. Retinol H+ 26g combina Duplo Retinol com Ácido Hialurônico Vetorizado e fator de proteção contra os raios UV.
+                        A conexão maravilhosa entre maquiagem e tratamento que a sua pele precisa.</p>
+                    </div>
+                    <div>
+                    <img src="img/basemista.png" alt="Base make b retinol" width="300px">
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <a href="https://www.boticario.com.br/base-liquida-cor-25-com-fps-80-make-b-retinol-h-26g/" type="button"
+                        class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_peleSC" tabindex="-1" aria-labelledby="modal_peleSc" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel5">Seca e cobertura</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                    <h4>Bruna Tavares BT Skin </h4>
+                    <p>Base líquida com acabamento aveludado. A BT Skin garante uniformidade aliada a um efeito natural.
+                        <br> Base Bruna Tavares BT Skin possui textura ultrafluida e cobertura leve a média com incrível acabamento de “segunda pele”, 
+                        permitindo a construção de camadas, sem pesar. 
+                        <br>Perfeita para peles secas!
+                    </p>
+                    </div>
+                    <div>
+                    <img src="img/pelesecacobertura.jpg" alt="base bruna tavares" width="300px">
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <a href="https://www.belezanaweb.com.br/bruna-tavares-bt-skin-l10-base-liquida-40ml?q=base%20bruna" type="button"
+                        class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_peleST" tabindex="-1" aria-labelledby="modalpeleSt" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel6">Seca e tratamento</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <h4>Base Hyaluronic</h4>
+                        <p>A Make B. Base Líquida Protetora Hyaluronic 70, protege dos raios solares nocivos e 
+                             proporciona uma pele mais lisa e uniforme imediatamente,
+                             <br> O ácido hialuronico em sua fórmula reduz rugas e linhas de expressão a partir de 7 dias de uso.
+                        </p>
+                    </div>
+                    <div>
+                    <img src="img/baseliquidaseca.png" alt="base hyaluronic" width="300px">
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <a href="https://www.boticario.com.br/base-liquida-protetora-hyaluronic-fps-70-cor-70-make-b-30-ml/" type="button"
                         class="btn btn-primary">Comprar</a>
                 </div>
             </div>
@@ -152,10 +248,12 @@
 
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+
+   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
 
 </body>
 
