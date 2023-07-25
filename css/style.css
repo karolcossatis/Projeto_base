@@ -4,7 +4,6 @@
     margin: 0;
 }
 
-/*
 :root {
     --fonte-titulos :  font-family: 'Bebas Neue', sans-serif;
     --font-geral: font-family: 'Lato', sans-serif;
@@ -13,27 +12,13 @@
     --medium-color:#EFA593;
     --soft-color: #E6DAD1;
 }
-*/
-:root {
-    --fonte-titulos :  font-family: 'Bebas Neue', sans-serif;
-    --font-geral: font-family: 'Lato', sans-serif;
-    --text-primary: #4D251C;
-    --dark-color: #A6705A;
-    --medium-color:#E8BBA5;
-    --soft-color: #FFE9D9;
-}
 
 body {
    /* background: rgb(251,164,202);
     background: radial-gradient(circle, rgb(253, 157, 245) 0%, rgb(63, 51, 114) 100%); */
     /*background: rgb(251,164,179);
     background: radial-gradient(circle, rgba(251,164,179,1) 0%, rgba(247,190,124,1) 100%);*/
-   /* background-image: linear-gradient(to right, #efa593, #df9685, #d08878, #c07a6b, #b16c5e, #b16c5e, #b16c5e, #b16c5e, #c07a6b, #d08878, #df9685, #efa593);*/
-   background-image: radial-gradient(circle, #66290f, #874b31, #a76f55, #c8947c, #e8bba5);
-   background-image: url(../img/fundobase.jpg);
-   background-position: center;
-   background-size: cover;
-  
+    background-image: linear-gradient(to right, #efa593, #df9685, #d08878, #c07a6b, #b16c5e, #b16c5e, #b16c5e, #b16c5e, #c07a6b, #d08878, #df9685, #efa593);
 
 }
 
@@ -42,11 +27,11 @@ body {
     margin-top: 30px;
   
 /* From https://css.glass */
-    background: rgba(219, 182, 148, 0.884);
+    background: rgba(255, 255, 255, 0.26);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
     border: 1px solid rgba(255, 255, 255, 0.05);
    
 
@@ -56,7 +41,6 @@ body {
 
 #container_secundario {
     padding: 15px;
-    
 }
 
 h1 {
@@ -71,15 +55,6 @@ h1 {
 h3 {
     color: var(--text-primary);
     font-family: var(--font-geral);
-    padding: 10px;
-}
-.area_opcao {
-   line-height: 1.4rem;
-
-  }
-
-.label_opcao {
-    font-size: 1.4rem;
 }
 
 #banner {
@@ -90,13 +65,12 @@ h3 {
 }
 
 #box_opcao {
-    padding-top: 10px;
+    padding-top: 20px;
     flex-direction: column;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     justify-items: center;
-   
 }
 
 
@@ -138,18 +112,6 @@ h3 {
         --bs-btn-disabled-bg: var(--dark-color);
         --bs-btn-disabled-border-color: none;
 
-}
-
-.form-check-input:checked {
-    background-color: var(--text-primary); 
-    border-color: var(--medium-color); 
-    --bs-focus-ring-color: rgba(133, 46, 12, 0.25);
-    --bs-link-hover-color: #ca470a;
-    
-  }
-
-#descobrirBtn {
-    padding: 10px;
 }
 
 .modal{
